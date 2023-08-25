@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/index-6e2620ea.css">
+</head>
+<body>
+    <div class="md:flex rounded-md justify-evenly mx-auto border md:container md:p-4 mt-2">
+        <div class="py-0 md:py-3">
+            <img class="h-[330px]" src="assets/logo-img-034f310f.svg" alt="">
+        </div>   
+        <div class="border p-1 md:px-3 md:pb-3 bg-[#d8d8d8] rounded-md">
+            <form class="md:px-11 grid grid-flow-row justify-center rounded-md" action="">
+                <p class="text-2xl p-2 text-blue-800">Calculate</p>
+                <div>
+                    <input id="monthlyIncome" class="p-2 border w-[300px] my-2 rounded-md" type="number" placeholder="Enter your income">
+                    <!-- <p class="p-2 text-red-500 hidden">Please Enter Right value !!</p>
+                    <p class="p-2 text-red-500 hidden">Don't use negative numbers !!</p> -->
+                </div>
+                <div>
+                    <input id="foodExpanse" class="p-2 border rounded-md my-2 w-[300px]" placeholder="Enter your expenses for food" type="number">
+                    <!-- <p class="p-2 text-red-500 hidden">Please Enter Right value !!</p>
+                    <p class="p-2 text-red-500 hidden">Don't use negative numbers !!</p> -->
+                </div>
+                <div>
+                    <input id="clothExpanse" class="p-2 border rounded-md my-2 w-[300px]" placeholder="Enter your expenses for Cloth" type="number">
+                    <!-- <p class="p-2 text-red-500 hidden">Please Enter Right value !!</p>
+                    <p class="p-2 text-red-500 hidden">Don't use negative numbers !!</p> -->
+                </div>
+                <div class="mb-5">
+                    <input id="houseRent" class="p-2 border rounded-md my-2 w-[300px]" placeholder="Enter your expenses for House Rent" type="number">
+                    <!-- <p class="p-2 text-red-500 hidden">Please Enter Right value !!</p>
+                    <p class="p-2 text-red-500 hidden">Don't use negative numbers !!</p> -->
+                </div>
+                <div class="">
+                    <a href="#" id="submitBtn" class="bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md">Submit</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="md:flex bg-[#d8d8d8] rounded-md justify-evenly mx-auto border container p-4 mt-2">
+        <div class="grid grid-flow-row justify-center">
+            <p id="totalExpenses" class="text-red-500 font-bold">Total Expenses: 00</p>
+            <p id="remainingBalance" class="font-bold">Remaining Balance: 00</p>
+            <div >
+                <form action="" class="flex flex-col justify-center">
+                    <div><input id="percentInput" class="p-2 border rounded-md my-2 w-[300px]" placeholder="Enter Saving percentage" type="number"> <label for="">%</label></div>
+                    <div class="my-2"><a id="percentBtn" href="#" class="px-3 w-auto py-2 bg-red-500 hover:bg-red-600 rounded-md">Submit</a></div>
+                    <p class="p-2 text-red-500 hidden">Don't use negative numbers !!</p>
+                </form>
+            </div>
+            <p id="percentSaved">Saved: 00</p>
+            <p id="mainBalance">Balance: 00</p>
+        </div>
+        <div class="text-center">
+            <i class="fa-solid fa-chart-line text-[150px]" style="color: #404040;"></i>
+        </div>
+    </div>
+
+
+    <script src="jsIntro.js"></script>
+</body>
+</html>
